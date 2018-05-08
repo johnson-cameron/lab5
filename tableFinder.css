@@ -1,0 +1,108 @@
+body{
+    background-color: #E1D7D4;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+    color: #E34E45;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 0;
+}
+
+h3{
+    color: #E34E45;
+}
+
+h4{
+    margin-top: 0;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 50px;
+}
+
+.form{
+    z-index: 10;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    top: 52%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+    font-family: 'Roboto Mono', monospace;
+    width: 250px;
+    height: 250px;
+    text-align: left;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 0 31px 1px rgba(0, 0, 0, 0.3);
+}
+
+#submitRes{
+    background-color: #008000;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    cursor: pointer;
+}
+
+.exit{
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+input{
+    display: block;
+    margin: 20px 0;
+    border: none;
+    border-bottom: #ADAAAA solid 1px;
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+}
+
+.tables{
+    z-index: 1;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.reserved{
+    height: 25px;
+    width: 25px;
+    background-color: #CCC;
+    color: #EEE;
+    border-radius: 100%;
+    margin: 5px;
+    padding: 25px;
+}
+
+.available{
+    height: 25px;
+    width: 25px;
+    background-color: #EEE;
+    color: #ADAAAA;
+    border-radius: 100%;
+    margin: 5px;
+    padding: 25px;
+}
+
+.available:hover{
+    background-color: #DDD;
+    cursor: pointer;
+}
+
+.reserved:hover{
+    cursor: not-allowed;
+}
+
+img:hover{
+    cursor: pointer;
+}

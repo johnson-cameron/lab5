@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Rubik:400,500,700" rel="stylesheet">    <link rel="stylesheet" href="tableFinder.css">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Table Finder</H1>
+    <h4>Pick your table now</h4>
+    <section class="tables">
+        <div class="available table" id="1">1</div>
+        <div class="reserved table" id="2">2</div>
+        <div class="available table" id="3">3</div>
+        <div class="available table" id="4">4</div>
+        <div class="available table" id="5">5</div>
+        <div class="reserved table" id="6">6</div>
+        <div class="available table" id="7">7</div>
+        <div class="available table" id="8">8</div>
+        <div class="available table" id="9">9</div>
+    </section>
+
+    <section class="form">
+        <img src="ic_clear_black_48px.svg" class="exit" alt="exit">
+        <h3>New Reservation</h3>
+        <div>Table Number: 3</div>
+        <input type="text" placeholder="Name" id="name">
+        <input type="text" placeholder="Phone Number" id="phone">
+        <input type="text" placeholder="Amount in your party" id="party">
+        <button type="button" id="submitRes">Submit Reservation</button>
+        <!-- form ontop z index fade toggle position absolute -->
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="tableFinder.js"></script>
+</body>
+</html>
